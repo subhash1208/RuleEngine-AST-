@@ -11,7 +11,7 @@ This project implements a rule engine application with a 3-tier architecture usi
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository_url>
+git clone https://github.com/subhash1208/RuleEngine-with-AST.git
 cd <repository_folder>
 ```
 
