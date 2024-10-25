@@ -1,7 +1,3 @@
-
-
-# Rule Engine with AST
-
 This project implements a rule engine application with a 3-tier architecture using Flask, SQLAlchemy, and SQLite. The rule engine allows for the creation, combination, evaluation, and modification of rules based on Abstract Syntax Trees (ASTs). A Tkinter-based frontend (UI) is also included.
 
 ## Table of Contents
@@ -9,8 +5,27 @@ This project implements a rule engine application with a 3-tier architecture usi
 2. [Project Components](#project-components)
 3. [Running the Application](#app-functionalities)
 4. [API Endpoints](#api-endpoints)
-5. [Testing Automation](#testing-with-`test.py`)
-6. [GUI Test Cases](#gui-test-cases)
+5. [GUI Test Cases](#gui-test-cases)
+---
+## Setup
+
+### 1. Clone the Repository
+```bash
+git clone <repository_url>
+cd <repository_folder>
+```
+
+### 2. Install the Required Dependencies
+```bash
+pip install flask sqlalchemy requests
+```
+
+### 3. Run the Flask Application
+```bash
+python main.py
+```
+The server should display "Welcome to the Rule Engine API! Use the available endpoints to create, combine, evaluate, and modify rules."
+<img src="https://github.com/subhash1208/RuleEngine-with-AST/blob/613df348a6ea1c075ec31e24030b71aeeeb6680e/screenshots/Screenshot%20(158).jpg" width="850">
 
 
 ## Project Components
@@ -50,7 +65,7 @@ python test.py
 7. **Duplicate Rule IDs in Combine**: Tests combining with duplicate rule IDs in the list.
 8. **Nonexistent Rule ID in Modify**: Attempts to modify a rule with a nonexistent ID.
 9. **Empty Modify Rule String**: Tests modifying a rule with an empty string.
-![Evaluate Rule Example - Rule ID 24](screenshots/Screenshot (158).jpg)
+<img src="https://github.com/subhash1208/RuleEngine-with-AST/blob/613df348a6ea1c075ec31e24030b71aeeeb6680e/screenshots/Screenshot%20(145).png" width="850">
 
 
 ## GUI Test Cases 
@@ -66,7 +81,7 @@ python test.py
   }
   ```
 - **Screenshot**:
-  ![Create Rule Example - Rule ID 21](https://drive.google.com/file/d/1itDLICCYQidY1wirbHh2SKZxKUGpL8nw/view?usp=sharing)
+  <img src="https://github.com/subhash1208/RuleEngine-with-AST/blob/613df348a6ea1c075ec31e24030b71aeeeb6680e/screenshots/Screenshot%20(154).png" width="850">
 
 ### 2. Create Rule Functionality
 - **Input**:
@@ -79,7 +94,7 @@ python test.py
   }
   ```
 - **Screenshot**:
-  ![Create Rule Example - Rule ID 22](https://drive.google.com/file/d/1_3xjG5P_EYvfXp9wmpJYT9u6vQ3HoXwS/view?usp=sharing)
+  <img src="https://github.com/subhash1208/RuleEngine-with-AST/blob/613df348a6ea1c075ec31e24030b71aeeeb6680e/screenshots/Screenshot%20(155).png" width="850">
 
 ### 3. Create Rule Functionality
 - **Input**:
@@ -92,7 +107,7 @@ python test.py
   }
   ```
 - **Screenshot**:
-  ![Create Rule Example - Rule ID 23](https://drive.google.com/file/d/1snuq_idTrXRutAJuwGg4AmfUwoIz1jqj/view?usp=sharing)
+  <img src="https://github.com/subhash1208/RuleEngine-with-AST/blob/613df348a6ea1c075ec31e24030b71aeeeb6680e/screenshots/Screenshot%20(156).png" width="850">
 
 ### 4. Combine Rules Functionality
 - **Input**: Combining Rule IDs 21 and 23 into Rule ID 24
@@ -104,7 +119,7 @@ python test.py
   }
   ```
 - **Screenshot**:
-  ![Combine Rule Example - Rule ID 24](https://drive.google.com/file/d/1Woe7DND9GG2Vb8qCMMONDfpIG0TlWRDL/view?usp=sharing)
+  <img src="https://github.com/subhash1208/RuleEngine-with-AST/blob/613df348a6ea1c075ec31e24030b71aeeeb6680e/screenshots/Screenshot%20(157).png" width="850">
 
 ### 5. Evaluate Rule Functionality
 - **Input**:
@@ -126,7 +141,8 @@ python test.py
   { "result": true }
   ```
 - **Screenshot**:
-  ![Evaluate Rule Example - Rule ID 24](https://drive.google.com/file/d/1dJsV7gcQGH3huby8SSJO0IbjKawZ1b2M/view?usp=sharing)
+  <img src="https://github.com/subhash1208/RuleEngine-with-AST/blob/613df348a6ea1c075ec31e24030b71aeeeb6680e/screenshots/Screenshot%20(159).png" width="850">
+  
 
 ### 6. Modify Rule Functionality
 - **Input**:
@@ -139,5 +155,4 @@ python test.py
   { "message": "Rule updated successfully" }
   ```
 - **Screenshot**:
-  ![Modify Rule Example - Rule ID 22](https://drive.google.com/file/d/1dJsV7gcQGH3huby8SSJO0IbjKawZ1b2M/view?usp=sharing)
-
+  <img src="https://github.com/subhash1208/RuleEngine-with-AST/blob/613df348a6ea1c075ec31e24030b71aeeeb6680e/screenshots/Screenshot%20(159).png" width="850">
