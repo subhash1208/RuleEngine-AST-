@@ -4,6 +4,16 @@
 
 This project implements a rule engine application with a 3-tier architecture using Flask, SQLAlchemy, and SQLite. The rule engine allows for the creation, combination, evaluation, and modification of rules based on Abstract Syntax Trees (ASTs). A Tkinter-based frontend (UI) is also included.
 
+## Table of Contents
+1. [Installation and Setup](#setup)
+2. [Project Components](#project-components)
+3. [Running the Application](#app-functionalities)
+4. [API Endpoints](#api-endpoints)
+5. [Testing Automation](#testing-with-`test.py`)
+6. [GUI Test Cases](#gui-test-cases)
+
+---
+
 ## Setup
 
 ### 1. Clone the Repository
