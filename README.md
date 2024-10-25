@@ -50,7 +50,7 @@ python test.py
 7. **Duplicate Rule IDs in Combine**: Tests combining with duplicate rule IDs in the list.
 8. **Nonexistent Rule ID in Modify**: Attempts to modify a rule with a nonexistent ID.
 9. **Empty Modify Rule String**: Tests modifying a rule with an empty string.
-![Evaluate Rule Example - Rule ID 24](https://drive.google.com/file/d/1OCBQKn2D12l1mk9-eulgW8o7T_Xk7Rhx/view?usp=sharing)
+![Evaluate Rule Example - Rule ID 24](screenshots/Screenshot (158).jpg)
 
 
 ## GUI Test Cases 
