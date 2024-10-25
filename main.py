@@ -100,6 +100,7 @@ def evaluate_ast(ast, data):
     elif ast.type == 'operand':
         left, op, right = ast.value.split()
         left_value = data.get(left)
+        
         if right.isdigit():
             right_value = int(right)
         elif right.startswith("'") and right.endswith("'"):
