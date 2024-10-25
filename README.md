@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-
-
-# Rule Engine with AST
-
 This project implements a rule engine application with a 3-tier architecture using Flask, SQLAlchemy, and SQLite. The rule engine allows for the creation, combination, evaluation, and modification of rules based on Abstract Syntax Trees (ASTs). A Tkinter-based frontend (UI) is also included.
 
 ## Table of Contents
@@ -10,22 +5,13 @@ This project implements a rule engine application with a 3-tier architecture usi
 2. [Project Components](#project-components)
 3. [Running the Application](#app-functionalities)
 4. [API Endpoints](#api-endpoints)
-5. [Testing Automation](#testing-with-`test.py`)
-6. [GUI Test Cases](#gui-test-cases)
-
+5. [GUI Test Cases](#gui-test-cases)
 ---
-=======
-Here’s the complete README file formatted in Markdown for your rule engine application:
+## Setup
 
-`\`\`markdown
->>>>>>> 4b238ee (Added Edge Case Handling)
-
-# Rule Engine Application
-
-<<<<<<< HEAD
 ### 1. Clone the Repository
 ```bash
-git clone <repository_url>
+git clone https://github.com/subhash1208/RuleEngine-with-AST.git
 cd <repository_folder>
 ```
 
@@ -36,94 +22,12 @@ pip install flask sqlalchemy requests
 
 ### 3. Run the Flask Application
 ```bash
-=======
-## Overview
-
-This project is a Rule Engine application designed to create, combine, evaluate, and modify rules based on user-defined conditions. It utilizes a Flask API for backend processing and a Tkinter GUI for user interaction. The rules are stored in a SQLite database, and the engine supports logical operations like AND, OR, and various comparison operations.
-
-## Features
-
-\- \*\*Create Rules:\*\* Define new rules using a structured format.
-
-\- \*\*Combine Rules:\*\* Merge existing rules into a new rule.
-
-\- \*\*Evaluate Rules:\*\* Assess if a rule is satisfied based on input data.
-
-\- \*\*Modify Rules:\*\* Update existing rules with new conditions.
-
-\- \*\*GUI Interface:\*\* User-friendly interface for interaction.
-
-\## Project Structure
-
-\`\`\`
-
-rule\_engine/
-
-│
-
-├── main.py # Flask API for rule management
-
-├── rlg.py # Tkinter GUI for user interaction
-
-├── test.py # Test script for rule engine functionalities
-
-├── requirements.txt # List of project dependencies
-
-└── rules.db # SQLite database for storing rules
-
-\`\`\`
-
-\## Installation
-
-\### Prerequisites
-
-\- Python (version 3.6 or higher)
-
-\- SQLite (comes bundled with Python)
-
-\### Steps to Run the Application
-
-1\. \*\*Clone or Download the Repository:\*\*
-
-\`\`\`bash
-
-git clone
-
-cd rule\_engine
-
-\`\`\`
-
-2\. \*\*Create a Virtual Environment (Optional but Recommended):\*\*
-
-\`\`\`bash
-
-python -m venv venv
-
-source venv/bin/activate # On Windows use \`venv\\Scripts\\activate\`
-
-\`\`\`
-
-3\. \*\*Install Requirements:\*\*
-
-\`\`\`bash
-
-pip install -r requirements.txt
-
-\`\`\`
-
-4\. \*\*Run the Flask API:\*\*
-
-\- Open a terminal and navigate to the directory where \`main.py\` is located.
-
-\`\`\`bash
-
->>>>>>> 4b238ee (Added Edge Case Handling)
 python main.py
 ```
 The server should display "Welcome to the Rule Engine API! Use the available endpoints to create, combine, evaluate, and modify rules."
-![Evaluate Rule Example - Rule ID 24](https://drive.google.com/file/d/1dJsV7gcQGH3huby8SSJO0IbjKawZ1b2M/view?usp=sharing)
+<img src="https://github.com/subhash1208/RuleEngine-with-AST/blob/613df348a6ea1c075ec31e24030b71aeeeb6680e/screenshots/Screenshot%20(158).jpg" width="850">
 
-<<<<<<< HEAD
+
 ## Project Components
 
 1. **Backend**: `main.py` (Flask and SQLAlchemy)
@@ -161,7 +65,7 @@ python test.py
 7. **Duplicate Rule IDs in Combine**: Tests combining with duplicate rule IDs in the list.
 8. **Nonexistent Rule ID in Modify**: Attempts to modify a rule with a nonexistent ID.
 9. **Empty Modify Rule String**: Tests modifying a rule with an empty string.
-![Evaluate Rule Example - Rule ID 24](https://drive.google.com/file/d/1OCBQKn2D12l1mk9-eulgW8o7T_Xk7Rhx/view?usp=sharing)
+<img src="https://github.com/subhash1208/RuleEngine-with-AST/blob/613df348a6ea1c075ec31e24030b71aeeeb6680e/screenshots/Screenshot%20(145).png" width="850">
 
 
 ## GUI Test Cases 
@@ -177,7 +81,7 @@ python test.py
   }
   ```
 - **Screenshot**:
-  ![Create Rule Example - Rule ID 21](https://drive.google.com/file/d/1itDLICCYQidY1wirbHh2SKZxKUGpL8nw/view?usp=sharing)
+  <img src="https://github.com/subhash1208/RuleEngine-with-AST/blob/613df348a6ea1c075ec31e24030b71aeeeb6680e/screenshots/Screenshot%20(154).png" width="850">
 
 ### 2. Create Rule Functionality
 - **Input**:
@@ -190,7 +94,7 @@ python test.py
   }
   ```
 - **Screenshot**:
-  ![Create Rule Example - Rule ID 22](https://drive.google.com/file/d/1_3xjG5P_EYvfXp9wmpJYT9u6vQ3HoXwS/view?usp=sharing)
+  <img src="https://github.com/subhash1208/RuleEngine-with-AST/blob/613df348a6ea1c075ec31e24030b71aeeeb6680e/screenshots/Screenshot%20(155).png" width="850">
 
 ### 3. Create Rule Functionality
 - **Input**:
@@ -203,7 +107,7 @@ python test.py
   }
   ```
 - **Screenshot**:
-  ![Create Rule Example - Rule ID 23](https://drive.google.com/file/d/1snuq_idTrXRutAJuwGg4AmfUwoIz1jqj/view?usp=sharing)
+  <img src="https://github.com/subhash1208/RuleEngine-with-AST/blob/613df348a6ea1c075ec31e24030b71aeeeb6680e/screenshots/Screenshot%20(156).png" width="850">
 
 ### 4. Combine Rules Functionality
 - **Input**: Combining Rule IDs 21 and 23 into Rule ID 24
@@ -215,7 +119,7 @@ python test.py
   }
   ```
 - **Screenshot**:
-  ![Combine Rule Example - Rule ID 24](https://drive.google.com/file/d/1Woe7DND9GG2Vb8qCMMONDfpIG0TlWRDL/view?usp=sharing)
+  <img src="https://github.com/subhash1208/RuleEngine-with-AST/blob/613df348a6ea1c075ec31e24030b71aeeeb6680e/screenshots/Screenshot%20(157).png" width="850">
 
 ### 5. Evaluate Rule Functionality
 - **Input**:
@@ -237,7 +141,8 @@ python test.py
   { "result": true }
   ```
 - **Screenshot**:
-  ![Evaluate Rule Example - Rule ID 24](https://drive.google.com/file/d/1dJsV7gcQGH3huby8SSJO0IbjKawZ1b2M/view?usp=sharing)
+  <img src="https://github.com/subhash1208/RuleEngine-with-AST/blob/613df348a6ea1c075ec31e24030b71aeeeb6680e/screenshots/Screenshot%20(159).png" width="850">
+  
 
 ### 6. Modify Rule Functionality
 - **Input**:
@@ -250,196 +155,4 @@ python test.py
   { "message": "Rule updated successfully" }
   ```
 - **Screenshot**:
-  ![Modify Rule Example - Rule ID 22](https://drive.google.com/file/d/1dJsV7gcQGH3huby8SSJO0IbjKawZ1b2M/view?usp=sharing)
-
-=======
-\`\`\`
-
-\- The server will start on \`http://127.0.0.1:5000\`.
-
-5\. \*\*Run the GUI Application:\*\*
-
-\- In a separate terminal window, run:
-
-\`\`\`bash
-
-python rlg.py
-
-\`\`\`
-
-\- This will launch the Tkinter GUI for the rule engine.
-
-\## API Endpoints
-
-\### 1. Create Rule
-
-\- \*\*Endpoint:\*\* \`/create\_rule\`
-
-\- \*\*Method:\*\* POST
-
-\- \*\*Payload:\*\*
-
-\`\`\`json
-
-{
-
-"rule\_string": "(age > 30 AND department = 'Sales')"
-
-}
-
-\`\`\`
-
-\- \*\*Response:\*\*
-
-\`\`\`json
-
-{
-
-"id": 1,
-
-"ast": "{\\"type\\":\\"operator\\",\\"value\\":\\"AND\\", ...}"
-
-}
-
-\`\`\`
-
-\### 2. Combine Rules
-
-\- \*\*Endpoint:\*\* \`/combine\_rules\`
-
-\- \*\*Method:\*\* POST
-
-\- \*\*Payload:\*\*
-
-\`\`\`json
-
-{
-
-"rule\_ids": \[1, 2\]
-
-}
-
-\`\`\`
-
-\- \*\*Response:\*\*
-
-\`\`\`json
-
-{
-
-"id": 3,
-
-"combined\_ast": "{\\"type\\":\\"operator\\",\\"value\\":\\"AND\\", ...}"
-
-}
-
-\`\`\`
-
-\### 3. Evaluate Rule
-
-\- \*\*Endpoint:\*\* \`/evaluate\_rule\`
-
-\- \*\*Method:\*\* POST
-
-\- \*\*Payload:\*\*
-
-\`\`\`json
-
-{
-
-"rule\_id": 3,
-
-"data": {
-
-"age": 35,
-
-"department": "Sales",
-
-"salary": 60000,
-
-"experience": 6
-
-}
-
-}
-
-\`\`\`
-
-\- \*\*Response:\*\*
-
-\`\`\`json
-
-{
-
-"result": true
-
-}
-
-\`\`\`
-
-\### 4. Modify Rule
-
-\- \*\*Endpoint:\*\* \`/modify\_rule\`
-
-\- \*\*Method:\*\* POST
-
-\- \*\*Payload:\*\*
-
-\`\`\`json
-
-{
-
-"rule\_id": 1,
-
-"new\_rule\_string": "(age > 40 AND department = 'HR')"
-
-}
-
-\`\`\`
-
-\- \*\*Response:\*\*
-
-\`\`\`json
-
-{
-
-"message": "Rule updated successfully"
-
-}
-
-\`\`\`
-
-\## Test Cases
-
-The \`test.py\` file includes various test cases for each of the functionalities in the rule engine, which can be executed to verify the application behavior.
-
-\## Requirements
-
-To run this application, you will need the following Python packages:
-
-\`\`\`
-
-Flask==2.0.1
-
-Flask-SQLAlchemy==2.5.1
-
-requests==2.26.0
-
-tkinter
-
-\`\`\`
-
-\## License
-
-This project is licensed under the MIT License. See the LICENSE file for more information.
-
-\## Acknowledgments
-
-\- Inspired by various rule engine implementations.
-
-\- Thanks to the Flask and Tkinter communities for their excellent resources.
-
-\`\`\`
-
-You can copy this entire text into a file named \`README.md\` in your project directory. Let me know if you need any more modifications!
->>>>>>> 4b238ee (Added Edge Case Handling)
+  <img src="https://github.com/subhash1208/RuleEngine-with-AST/blob/613df348a6ea1c075ec31e24030b71aeeeb6680e/screenshots/Screenshot%20(159).png" width="850">
